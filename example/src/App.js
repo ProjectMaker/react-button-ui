@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-button-ui'
+import ButtonUI from 'react-button-ui'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <ButtonUI label={'Validate'} />
       </div>
     )
   }

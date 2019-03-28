@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
+export default class ButtonUI extends Component {
   static propTypes = {
-    text: PropTypes.string
+    label: PropTypes.string
   }
 
   render() {
     const {
-      text
+      label
     } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
+      <button onClick={() => console.log('click')}>{label}</button>
     )
   }
 }
